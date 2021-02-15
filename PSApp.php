@@ -4,7 +4,7 @@
 <!-- Actual HTML for print-->
 <model-viewer 
 style="width:100%;height:100%"
-id="modelViewer"
+class="modelViewer"
 camera-controls
 disable-zoom
 src=""
