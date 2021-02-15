@@ -24,6 +24,7 @@ window.onload = function() {
   requestData();
 };
 async function requestData() {
+  
   console.log(modelColor,modelID,modelVersion);
   let modelViewer = document.querySelector("#modelViewer");
   modelViewer.src = `https://soer145a.github.io/PurpleScout_Demo/models/${modelID}/${modelID}_GLTF/${modelID}_${modelVersion}/${modelID}_${modelVersion}.gltf`;
