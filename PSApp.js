@@ -9,4 +9,7 @@ window.addEventListener("load", () => {
 function identifyModelViewers() {
     let loadedModelViewers = document.querySelectorAll(".modelViewer");
     console.log(loadedModelViewers);
+    loadedModelViewers.forEach( (model,index) =>{
+        model.setAttribute("id",`modelViewer${index}`)
+    })
 }
