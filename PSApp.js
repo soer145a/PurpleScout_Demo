@@ -10,6 +10,6 @@ function identifyModelViewers() {
     let loadedModelViewers = document.querySelectorAll(".modelViewer");
     console.log(loadedModelViewers);
     loadedModelViewers.forEach( (model,index) =>{
-        model.setAttribute("id",`modelViewer${index}`)
+        model.setAttribute("id",`modelViewer${index+1}`)
     })
 }
