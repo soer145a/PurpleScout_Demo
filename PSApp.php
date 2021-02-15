@@ -20,9 +20,7 @@ exposure="0.8"
 
 </model-viewer>
 <script>
-let modelID = "<?=$modelID?>";
-let modelColor = "<?=$color?>";
-let modelVersion = "<?=$version?>";
+let localVariable = "1";
 window.onload = function() {
   requestData();
 };
