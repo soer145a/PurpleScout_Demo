@@ -12,7 +12,7 @@ ar
 camera-orbit="50deg 60deg 40deg"
 loading="eager"
 ios-src=""
-id="::VERSION::::COLOR::"
+id="::VERSION::::COLOR::::MODELID::"
 environment-image="https://soer145a.github.io/PurpleScout_Demo/weewee_1.hdr"
 shadow-intensity="0"
 shadow-softness="0"
@@ -21,7 +21,7 @@ exposure="0.8"
 </model-viewer>
 <script>
   console.log("::MODELID::");
-  let modelViewer = document.querySelector("#::VERSION::::COLOR::");
+  let modelViewer = document.querySelector("#::VERSION::::COLOR::::MODELID::");
   modelViewer.src = `https://soer145a.github.io/PurpleScout_Demo/models/::MODELID::/::MODELID::_GLTF/::MODELID::_modelVersion}/::MODELID::_modelVersion.gltf`;
   modelViewer.setAttribute("ios-src",`https://soer145a.github.io/PurpleScout_Demo/models/::MODELID::/::MODELID::_USDZ/::MODELID::_modelVersion.usdz`);
   modelViewer.addEventListener("load",()=>{
