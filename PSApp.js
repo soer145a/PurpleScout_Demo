@@ -11,9 +11,7 @@ function identifyModelViewers() {
     console.log(loadedModelViewers);
     loadedModelViewers.forEach( (model,index) =>{
         model.setAttribute("id", `modelViewer${index + 1}`);
-        model.addEventListener("load", () => { 
-            requestData(model); 
-        });
+        requestData(model); 
     })
 }
 function requestData(modelViewer) {
