@@ -26,10 +26,10 @@ window.onload = function() {
 async function requestData() {
   console.log(modelColor,modelID,modelVersion);
   let modelViewer = document.querySelector("#modelViewer");
-  modelViewer.src = `https://files.purplescout.se/dk/Room_cph_deploy/unzipedModels/${modelID}/${modelID}_GLTF/${modelID}_${modelVersion}/${modelID}_${modelVersion}.gltf`;
-  modelViewer.setAttribute("ios-src",`https://files.purplescout.se/dk/Room_cph_deploy/unzipedModels/${modelID}/${modelID}_USDZ/${modelID}_${modelVersion}.usdz`);
+  modelViewer.src = `https://soer145a.github.io/PurpleScout_Demo/models/${modelID}/${modelID}_GLTF/${modelID}_${modelVersion}/${modelID}_${modelVersion}.gltf`;
+  modelViewer.setAttribute("ios-src",`https://soer145a.github.io/PurpleScout_Demo/models/${modelID}/${modelID}_USDZ/${modelID}_${modelVersion}.usdz`);
   modelViewer.addEventListener("load",()=>{
-    modelViewer.model.materials[0].pbrMetallicRoughness.baseColorTexture.texture.source.setURI(`https://files.purplescout.se/dk/Room_cph_deploy/unzipedModels/${modelID}/${modelID}_GLTF/${modelID}_${modelVersion}/${modelID}_baseColor_${modelColor}.png`);
+    modelViewer.model.materials[0].pbrMetallicRoughness.baseColorTexture.texture.source.setURI(`https://soer145a.github.io/PurpleScout_Demo/models/${modelID}/${modelID}_GLTF/${modelID}_${modelVersion}/${modelID}_baseColor_${modelColor}.png`);
   });
 }
 </script>
