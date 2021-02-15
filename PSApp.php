@@ -12,7 +12,7 @@ ar
 camera-orbit="50deg 60deg 40deg"
 loading="eager"
 ios-src=""
-environment-image="https://files.purplescout.se/dk/Room_cph_deploy/files/weewee_1.hdr"
+environment-image="https://soer145a.github.io/PurpleScout_Demo/weewee_1.hdr"
 shadow-intensity="0"
 shadow-softness="0"
 exposure="0.8"
@@ -28,7 +28,7 @@ window.onload = function() {
 };
 async function requestData() {
     let modelViewer = document.querySelector("#modelViewer");
-    modelViewer.src = "https://files.purplescout.se/dk/Room_cph_deploy/unzipedModels/<?=$modelID?>/<?=$modelID?>_GLTF/<?=$modelID?>_<?=$version?>/<?=$modelID?>_<?=$version?>.gltf";
+    modelViewer.src = "";
     //modelViewer.setAttribute("ios-src",sData.usdz[0]); 
 }
 </script>
