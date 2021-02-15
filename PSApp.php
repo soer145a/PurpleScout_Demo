@@ -9,6 +9,7 @@ camera-controls
 disable-zoom
 src=""
 ar
+id=""
 camera-orbit="50deg 60deg 40deg"
 loading="eager"
 ios-src=""
@@ -19,6 +20,9 @@ exposure="0.8"
 >
 </model-viewer>
 <script>
+let modelID = "<?=$id?>";
+let modelColor = "<?=$c?>";
+let modelVersion = "<?=$v?>";
 window.onload = function() {
   requestData();
 };
