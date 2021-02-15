@@ -12,6 +12,7 @@ ar
 camera-orbit="50deg 60deg 40deg"
 loading="eager"
 ios-src=""
+id="::MODELID::::VERSION::::COLOR::"
 environment-image="https://soer145a.github.io/PurpleScout_Demo/weewee_1.hdr"
 shadow-intensity="0"
 shadow-softness="0"
@@ -19,11 +20,11 @@ exposure="0.8"
 >
 </model-viewer>
 <script>
-  console.log(<?=$_GET['modelD']?>);
-  let modelViewer = document.querySelector("#modelViewer");
-  modelViewer.src = `https://soer145a.github.io/PurpleScout_Demo/models/${modelID}/${modelID}_GLTF/${modelID}_${modelVersion}/${modelID}_${modelVersion}.gltf`;
-  modelViewer.setAttribute("ios-src",`https://soer145a.github.io/PurpleScout_Demo/models/${modelID}/${modelID}_USDZ/${modelID}_${modelVersion}.usdz`);
+  console.log("::MODELID::");
+  let modelViewer = document.querySelector("#::MODELID::::VERSION::::COLOR::");
+  modelViewer.src = `https://soer145a.github.io/PurpleScout_Demo/models/::MODELID::/::MODELID::_GLTF/::MODELID::_modelVersion}/::MODELID::_modelVersion.gltf`;
+  modelViewer.setAttribute("ios-src",`https://soer145a.github.io/PurpleScout_Demo/models/::MODELID::/::MODELID::_USDZ/::MODELID::_modelVersion.usdz`);
   modelViewer.addEventListener("load",()=>{
-    modelViewer.model.materials[0].pbrMetallicRoughness.baseColorTexture.texture.source.setURI(`https://soer145a.github.io/PurpleScout_Demo/models/${modelID}/${modelID}_GLTF/${modelID}_${modelVersion}/${modelID}_baseColor_${modelColor}.png`);
+    modelViewer.model.materials[0].pbrMetallicRoughness.baseColorTexture.texture.source.setURI(`https://soer145a.github.io/PurpleScout_Demo/models/::MODELID::/::MODELID::_GLTF/::MODELID::_modelVersion/::MODELID::_baseColor_modelColor.png`);
   });
 </script>
