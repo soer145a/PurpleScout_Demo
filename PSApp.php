@@ -24,6 +24,7 @@ window.onload = function() {
   requestData();
 };
 async function requestData() {
+  console.log(modelColor,modelID,modelVersion);
     let modelViewer = document.querySelector("#modelViewer");
     modelViewer.src = "https://soer145a.github.io/PurpleScout_Demo/models/4011/4011_GLTF/4011_Closed/4011_Closed.gltf";
     //modelViewer.setAttribute("ios-src",sData.usdz[0]); 
