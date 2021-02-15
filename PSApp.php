@@ -21,10 +21,10 @@ exposure="0.8"
 </model-viewer>
 <script>
   console.log("::MODELID::");
-  let modelViewer = document.querySelector("#::VERSION::::COLOR::::MODELID::");
-  modelViewer.src = `https://soer145a.github.io/PurpleScout_Demo/models/::MODELID::/::MODELID::_GLTF/::MODELID::_::VERSION::/::MODELID::_::VERSION::.gltf`;
-  modelViewer.setAttribute("ios-src",`https://soer145a.github.io/PurpleScout_Demo/models/::MODELID::/::MODELID::_USDZ/::MODELID::_::VERSION::.usdz`);
-  modelViewer.addEventListener("load",()=>{
-    modelViewer.model.materials[0].pbrMetallicRoughness.baseColorTexture.texture.source.setURI(`https://soer145a.github.io/PurpleScout_Demo/models/::MODELID::/::MODELID::_GLTF/::MODELID::_::VERSION::/::MODELID::_baseColor_::COLOR::.png`);
+  //let modelViewer = document.querySelector("#::VERSION::::COLOR::::MODELID::");
+  ::VERSION::::COLOR::::MODELID::.src = `https://soer145a.github.io/PurpleScout_Demo/models/::MODELID::/::MODELID::_GLTF/::MODELID::_::VERSION::/::MODELID::_::VERSION::.gltf`;
+  ::VERSION::::COLOR::::MODELID::.setAttribute("ios-src",`https://soer145a.github.io/PurpleScout_Demo/models/::MODELID::/::MODELID::_USDZ/::MODELID::_::VERSION::.usdz`);
+  ::VERSION::::COLOR::::MODELID::.addEventListener("load",()=>{
+    ::VERSION::::COLOR::::MODELID::.model.materials[0].pbrMetallicRoughness.baseColorTexture.texture.source.setURI(`https://soer145a.github.io/PurpleScout_Demo/models/::MODELID::/::MODELID::_GLTF/::MODELID::_::VERSION::/::MODELID::_baseColor_::COLOR::.png`);
   });
 </script>
