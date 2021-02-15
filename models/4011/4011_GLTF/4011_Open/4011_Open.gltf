@@ -67,12 +67,12 @@
   "buffers": [
     {
       "byteLength": 176944,
-      "uri": "Unity HD Render Pipeline (Metallic Standard).bin"
+      "uri": "4011_Open.bin"
     }
   ],
   "images": [
     {
-      "uri": "4011_baseColor.png"
+      "uri": "4011_baseColor_BrightBlue.png"
     },
     {
       "uri": "4011_occlusionRoughnessMetallic.png"
