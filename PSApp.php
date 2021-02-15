@@ -1,9 +1,3 @@
-<script>
-<?php
-  echo "let modelVersion = $v";
-?>
-</script>
-
 <!-- Import the component -->
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
@@ -26,6 +20,11 @@ exposure="0.8"
 
 </model-viewer>
 <script>
+<?php
+echo "let modelVersion = $v";
+echo "let color = $c";
+echo "let modelID = $ID";
+?>
 window.onload = function() {
   requestData();
 };
