@@ -17,7 +17,7 @@ function identifyModelViewers() {
     })
 }
 function requestData(modelViewer) {
-    console.log(modelColor,modelID,modelVersion);
+    console.log(modelColor,modelID,modelVersion,"THIS IS WHAT YOU WANT");
     modelViewer.src = `https://soer145a.github.io/PurpleScout_Demo/models/${modelID}/${modelID}_GLTF/${modelID}_${modelVersion}/${modelID}_${modelVersion}.gltf`;
     modelViewer.setAttribute("ios-src",`https://soer145a.github.io/PurpleScout_Demo/models/${modelID}/${modelID}_USDZ/${modelID}_${modelVersion}.usdz`);
     modelViewer.addEventListener("load",()=>{
