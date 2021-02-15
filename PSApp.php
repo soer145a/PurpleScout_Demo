@@ -20,7 +20,7 @@ exposure="0.8"
 
 </model-viewer>
 <script>
-let localVariable = <?=$v?>;
+let localVariable = "<?=$v?>";
 window.onload = function() {
   requestData();
 };
