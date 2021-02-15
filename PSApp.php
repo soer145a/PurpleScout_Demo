@@ -20,11 +20,6 @@ exposure="0.8"
 
 </model-viewer>
 <script>
-<?php
-echo "let modelVersion = $v";
-echo "let color = $c";
-echo "let modelID = $ID";
-?>
 window.onload = function() {
   requestData();
 };
