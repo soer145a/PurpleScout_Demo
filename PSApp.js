@@ -16,7 +16,7 @@ function identifyModelViewers() {
         });
     })
 }
-function requestData(modelViewer) {
+async function requestData(modelViewer) {
     console.log(modelColor,modelID,modelVersion);
     modelViewer.src = `https://soer145a.github.io/PurpleScout_Demo/models/${modelID}/${modelID}_GLTF/${modelID}_${modelVersion}/${modelID}_${modelVersion}.gltf`;
     modelViewer.setAttribute("ios-src",`https://soer145a.github.io/PurpleScout_Demo/models/${modelID}/${modelID}_USDZ/${modelID}_${modelVersion}.usdz`);
